@@ -6,7 +6,7 @@ import "github.com/alexanderbkl/golang-hexagonal-boilerplate/internal/ports"
 //
 // It serves as dependency injection for your app, add any dependencies you require here.
 
-type Resolver struct{
+type Resolver struct {
 	userService ports.UserService
 }
 

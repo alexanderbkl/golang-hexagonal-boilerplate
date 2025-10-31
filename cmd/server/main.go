@@ -87,7 +87,7 @@ func main() {
 
 	// Start GraphQL/HTTP server
 	log.Infof("Starting GraphQL server on port %s...", cfg.Server.HTTPPort)
-	
+
 	resolver := gqladapter.NewResolver(userService)
 	srv := handler.NewDefaultServer(gqladapter.NewExecutableSchema(gqladapter.Config{Resolvers: resolver}))
 

@@ -127,7 +127,7 @@ func (r *PostgresRepository) Update(ctx context.Context, id string, input *domai
 	// Use current values if not provided in input
 	email := currentUser.Email
 	name := currentUser.Name
-	
+
 	if input.Email != nil {
 		email = *input.Email
 	}
